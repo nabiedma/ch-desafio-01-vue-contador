@@ -20,31 +20,43 @@
 <body>
     <div id="app" class="vh-100 d-flex justify-content-center align-items-center">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <h1 class="text-center text-uppercase">Desafío CoderHouse</h1>
-                    <h3 class="text-center mb-3">Alejandro Biedma</h3>
-                    <h1 class="text-center">Tu contador:</h1>
-                    <h1 class="text-center">{{ contador }}</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-3 d-flex justify-content-center">
-                    <button @click="contadorDown()" class="btn btn-primary btn-lg">-</button>
-                </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <button @click="contadorUp()" class="btn btn-primary btn-lg">+</button>
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center text-uppercase">Desafío CoderHouse</h1>
+                            <h3 class="text-center mb-3">Alejandro Biedma</h3>
+                            <h1 class="text-center">Tu contador:</h1>
+                            <h1 class="text-center">{{ contador }}</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <button @click="contadorDown()" class="btn btn-primary btn-lg">-</button>
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <button @click="contadorUp()" class="btn btn-primary btn-lg">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="row justify-content-center mt-5">
-                <div class="col-3">
-                    <h3 class="text-center">Total de clicks en contador:</h3>
-                    <h4 class="text-center">{{ clicks }}</h4>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center">Total de clicks en contador:</h3>
+                            <h4 class="text-center">{{ clicks }}</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h3 class="text-center">Contador al cuadrado:</h3>
-                    <h4 class="text-center">{{ calcPotencia }}</h4>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center">Contador al cuadrado:</h3>
+                            <h4 class="text-center">{{ calcPotencia }}</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
